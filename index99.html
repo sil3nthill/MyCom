@@ -112,8 +112,7 @@
         $svgtextMsg.innerText = 'Successfully Generated Code00000'
         $svgtextMsg.className = 'message success'
       } catch (e) {
-	    $svgtext.setValue(e)
-        $svgtextMsg.innerText = 'Error at Parser'
+        $svgtextMsg.innerText = e
         $svgtextMsg.className = 'message error'
         return
       }
